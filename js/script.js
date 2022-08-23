@@ -131,12 +131,12 @@ document.getElementById('calculate-total').addEventListener('click',function(){
     const manegerAmount = document.getElementById('maneger-amount');
     const manegerAmountString = manegerAmount.value;
     const manegerAmountNumber = parseFloat(manegerAmountString);
-   // console.log(manegerAmountNumber)
+   
    
    const coachAmount = document.getElementById('coach-amount');
    const coachAmountString = coachAmount.value;
    const coachAmountNumber = parseFloat(coachAmountString)
-   //console.log(coachAmountNumber)
+   
 
     const totalAmount = document.getElementById('total-amount');
 
