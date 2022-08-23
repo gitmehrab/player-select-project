@@ -1,12 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Football Team</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSG Football Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <link rel="stylesheet" href="./style.css">
+  <body class="bg-dark">
+    <header class="container">
+        <div class="row">
+            <div class="col-8 d-flex flex-column align-items-center mx-auto mt-5">
+                <h1 class="text-danger header mb-3">Select PSG best player</h1>
+                <p class="text-white">Paris Saint-Germain Football Club, commonly referred to as Paris Saint-Germain, Paris, Paris SG or simply PSG is a professional football club based in Paris, France. They compete in Ligue 1</p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-3">
+            <div class="col-9">
+              
+              <div class="row gx-2">
+                <!-- card 1 -->
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  <img class="img-fluid img-player" src="https://images2.minutemediacdn.com/image/upload/c_crop,w_2000,h_1125,x_0,y_153/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01fjszw68wr2ha39gmfv.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-secondary text-white">
+                    <h5 id="messi-id" class="card-title">Lionel Messi</h5>
+                    <p class="card-text">30 goals . 100 assists</p>
+                    <button id="messi-btn" class="btn btn-primary col-12">Select</button>
+                  </div>
+                </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  <img class="img-fluid img-player" src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/05/08/113689.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-secondary text-white">
+                    <h5 id="neymar-id" class="card-title">Neymar</h5>
+                    <p class="card-text">30 goals . 100 assists</p>
+                    <button id="neymar-btn" class="btn btn-primary col-12">Select</button>
+                  </div>
+                </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  <img class="img-fluid img-player" src="https://psgtalk.com/wp-content/uploads/2020/12/Kylian-Mbappe-celebration-PSG-vs-Lorient-Ligue-1-2020.jpg" class="card-img-top" alt="...">
+                  <div class="card-body bg-secondary text-white">
+                    <h5 id="mbappi-id" class="card-title">Mbappe</h5>
+                    <p class="card-text">30 goals . 100 assists</p>
+                    <button id="mbappi-btn" class="btn btn-primary col-12">Select</button>
+                  </div>
+                </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-3 bg-secondary select-section text-white">
+              <h2>selected-v</h2>
+              <div>
+                <ol id="select-id"></ol>
+              </div>
+            </div>
+        </div>
+        <!-- new row -->
+        <div class="row mb-5">
+            <div class="col-9">
+              
+              <div class="row gx-2">
+                <!-- card 3 -->
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  <img class="img-fluid img-player" src="https://images.performgroup.com/di/library/omnisport/db/17/thiagosilva-cropped_18vhmnmsnrqzn1u055jg7qsvno.jpg?t=1264944685&w=1200&h=630" class="card-img-top" alt="...">
+                  <div class="card-body bg-secondary text-white">
+                    <h5 id="silva-id" class="card-title">Silva</h5>
+                    <p class="card-text">30 goals . 100 assists</p>
+                    <button id="silva-btn" class="btn btn-primary col-12">Select</button>
+                  </div>
+                </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  <img class="img-fluid img-player" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt8f2ebbf4edd9e865/60e5f23db08e424bfbc94855/8531e072f22fdc98450c02b6b9ba985d7579ca72.png" class="card-img-top" alt="...">
+                  <div class="card-body bg-secondary text-white">
+                    <h5 id="ramos-id" class="card-title">Ramos</h5>
+                    <p class="card-text">30 goals . 100 assists</p>
+                    <button id="ramos-btn" class="btn btn-primary col-12">Select</button>
+                  </div>
+                </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  <img class="img-fluid img-player" src="https://netstorage-sportsbrief.akamaized.net/images/615b2d5692d034c6.jpg?imwidth=900" class="card-img-top" alt="...">
+                  <div class="card-body bg-secondary text-white">
+                    <h5 id="demaria-id" class="card-title">Demaria</h5>
+                    <p class="card-text">30 goals . 100 assists</p>
+                    <button id="demaria-btn" class="btn btn-primary col-12">Select</button>
+                  </div>
+                </div>
+                </div>
+                
+               
+                
+                
+              </div>
+            </div>
+            <div class="col-3 bg-secondary calculate-section text-white gap-2">
+              <h2>Budget</h2>
+              <div class="d-flex mt-2">
+                <span class="col-6">Per Player :</span>
+              <input id="price-per-player" class="col-6" type="text">
+              </div>
+              <a id="calculate" class="btn btn-primary col-10 m-2">Calculate</a>
+              <div class="d-flex mt-2">
+                <span class="col-6">Player expenses:</span>
+                <p>$<span id="expense-amount" >00</span></p>
+              </div>
+              <div class="d-flex mt-2">
+                <span class="col-6">Maneger :</span>
+              <input id="maneger-amount" class="col-6" type="text">
+              </div>
+              <div class="d-flex mt-2">
+                <span class="col-6"> Coach:</span>
+              <input id="coach-amount" class="col-6" type="text">
+              </div>
+              <a id="calculate-total" class="btn btn-primary col-10 m-2">Calculate total</a>
+              <div class="d-flex mt-2">
+                <span class="col-6">Total:</span>
+                <p>$<span id="total-amount">00</span></p>
+              </div>
+            </div>
+        </div>
+    </header>
+    <script src="./js/utilitis.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>
